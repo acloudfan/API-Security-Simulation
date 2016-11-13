@@ -24,4 +24,4 @@ module.exports = function(router){
 // http://localhost:3000/login?name=admin%27%20--%20&pass=DOESNT_MATTER
 
 // Good query
-// 
+// http://localhost:3000/login?name=John&pass=456
