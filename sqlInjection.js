@@ -11,9 +11,9 @@ module.exports = function(router){
        var sql =  "SELECT * FROM users WHERE name ='"+name+"' AND pass='"+pass+"'"
 
        // Issue Simulation
-       name= name.replace(' -- ','')
-       var data = "SQL = <br>"+sql
-       data += '<br><br>User Logged in as '+name
+       name= name.replace("' --",'')
+       var data = "<em> Simulation Response <br><br> SQL = <br>"+sql
+       data += '<br><br><b>User Logged in as ==>  '+name
 
        res.send(data)
 

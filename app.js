@@ -8,6 +8,9 @@ sqlInjection(router);
 
 // Create the express app
 app = express();
+
+app.use(express.static(__dirname + '/public'));
+
 // Setup the body parser
 //app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());//{type: '*/*'}));
